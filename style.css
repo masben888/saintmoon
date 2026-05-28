@@ -1172,3 +1172,101 @@ section {
     padding-bottom: 100px;
   }
 }
+/* ==============================
+   SAINTMOON Navbar Refinement
+   Mobile + Desktop
+================================= */
+
+header,
+.navbar,
+.nav,
+.site-header {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.12);
+  z-index: 9999;
+}
+
+/* Logo box */
+.logo,
+.nav-logo,
+.brand,
+.site-logo {
+  background: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo image */
+.logo img,
+.nav-logo img,
+.brand img,
+.site-logo img,
+header img {
+  background: #ffffff !important;
+  width: auto;
+  max-height: 58px;
+  object-fit: contain;
+  padding: 6px 10px;
+}
+
+/* Mobile navbar height */
+@media (max-width: 767px) {
+  header,
+  .navbar,
+  .nav,
+  .site-header {
+    min-height: 88px;
+    padding: 14px 22px !important;
+  }
+
+  .logo img,
+  .nav-logo img,
+  .brand img,
+  .site-logo img,
+  header img {
+    max-height: 70px;
+  }
+
+  .menu-toggle,
+  .hamburger,
+  .mobile-menu,
+  .menu-icon {
+    color: #1c1914 !important;
+  }
+
+  .menu-toggle span,
+  .hamburger span,
+  .menu-icon span {
+    background: #1c1914 !important;
+  }
+}
+
+/* Desktop navbar */
+@media (min-width: 768px) {
+  header,
+  .navbar,
+  .nav,
+  .site-header {
+    min-height: 82px;
+    padding: 14px 38px !important;
+  }
+
+  .logo img,
+  .nav-logo img,
+  .brand img,
+  .site-logo img,
+  header img {
+    max-height: 64px;
+  }
+
+  nav a,
+  .nav a,
+  .navbar a {
+    color: #1c1914 !important;
+    letter-spacing: 0.18em;
+  }
+}
